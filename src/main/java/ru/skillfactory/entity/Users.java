@@ -1,7 +1,9 @@
 package ru.skillfactory.entity;
 
 import javax.persistence.*;
+
 import lombok.Data;
+
 import java.math.BigDecimal;
 
 @Entity
@@ -9,15 +11,15 @@ import java.math.BigDecimal;
 @Data
 public class Users {
 
-    public Users() {
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id", nullable = false)
+    @Column(name = "USER_ID", nullable = false)
     private Long user_id;
     @Column(name = "BALANCE")
     private BigDecimal balance;
+
+    public Users() {
+    }
 
     public Users(BigDecimal balance) {
         this.balance = balance;
