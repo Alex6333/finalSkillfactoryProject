@@ -18,25 +18,25 @@ API для интернет-банка.
 
 Выполнять операции со счётом по соответсвующим эндпоинтам
 
-узнать баланс
+узнать баланс:
 
 http://localhost:8080/getBalance/{id}
 
 http://localhost:8080/getBalance/21
 
-снять со счета
+снять со счета:
 
 http://localhost:8080/takeMoney/{id}/{sum}
 
 http://localhost:8080/takeMoney/21/550
 
-пополнить счёт
+пополнить счёт:
 
 http://localhost:8080/putMoney/{id}/{sum}
 
 http://localhost:8080/putMoney/21/550
 
-получить операции пользователя по id и дате
+получить операции пользователя по id и дате:
 
 http://localhost:8080/getOperationList?user_id=21&start=2023-04-25&end=2023-04-25
 
