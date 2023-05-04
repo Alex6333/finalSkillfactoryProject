@@ -43,4 +43,14 @@ public class BalanceOperationsController {
 
         return usersService.getOperationList(user_id, start, end);
     }
+
+    @PostMapping("/transferMoney")
+    @ApiOperation(value = "Перевести заданную сумму другому пользователю")
+    public String transferMoney(
+            @RequestParam Long fromId,
+            @RequestParam Long toId,
+            @RequestParam int amount) {
+
+        return usersService.transferMoney(fromId, toId, amount);
+    }
 }

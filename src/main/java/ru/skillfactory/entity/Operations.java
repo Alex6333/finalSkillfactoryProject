@@ -32,11 +32,22 @@ public class Operations implements Serializable {
     @JsonProperty("Operation date")
     private LocalDate date;
 
+    @Column(name = "TO_USER_ID")
+    private Long to_user_id;
+
     public Operations(Long user_id, int operation_type, int amount, LocalDate date) {
         this.user_id = user_id;
         this.operation_type = operation_type;
         this.amount = amount;
         this.date = date;
+    }
+
+    public Operations(Long user_id, int operation_type, int amount, LocalDate date, Long to_user_id) {
+        this.user_id = user_id;
+        this.operation_type = operation_type;
+        this.amount = amount;
+        this.date = date;
+        this.to_user_id = to_user_id;
     }
 
     public Operations() {
