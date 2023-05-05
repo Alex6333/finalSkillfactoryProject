@@ -74,5 +74,6 @@ http://localhost:8080/transferMoney?fromId=23&toId=21&amount=100
 
 Скриншот структуры базы данных:
 
-![image](https://user-images.githubusercontent.com/96256651/234287456-a14f9ded-eca8-4b4c-b207-1ecdbe9e267c.png)
+![image](https://user-images.githubusercontent.com/96256651/236404522-64bb6568-3445-4ce9-8a79-fcd3a7a612ce.png)
+
 
